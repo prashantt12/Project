@@ -7,10 +7,11 @@ const port = process.env.PORT || 3000;
 
 // MiddleWare
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Basic Route
 app.get('/', (req, res)=>{
-    req.send('Hello World');
+    res.send('Hello World');
 });
 
 //Importing the routes
