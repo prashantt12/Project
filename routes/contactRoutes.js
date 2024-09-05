@@ -121,5 +121,4 @@ router.post('/deleteContact', (req, res) => {
         res.status(400).send({ error: 'Invalid data_store value. Use "CRM" or "DATABASE"' });
     }
 });
-
 module.exports = router;
